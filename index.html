@@ -6,27 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Starter Template for Bootstrap</title>
+    <title>Videos we Love</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <style>
-        .starter-template {
-            padding: 40px 15px;
-            text-align: center;
-        }
-
-        .footer {
-            padding-top: 50px;
-            text-align: center;
-        }
-
-        .glyphicon-heart {
-            color:red;
-        }
-    </style>
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -35,10 +19,9 @@
     <![endif]-->
 </head>
 
-<body>
+<body ng-app="app" ng-controller="MainController as main">
 
 <div class="container">
-
     <div class="starter-template">
         <h1>Videos we Love <span class="glyphicon glyphicon-heart"></span></h1>
 
@@ -46,78 +29,15 @@
     </div>
 
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" ng-repeat="video in main.videos">
             <div class="thumbnail">
-                <iframe width="210" height="157" src="https://www.youtube.com/embed/Mpsn3WaI_4k" frameborder="0" allowfullscreen></iframe>
+                <iframe width="210" height="157" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
                 <div class="caption">
-                    <h3>Spotify Culture Part 1 + 2</h3>
-                    <p>
-                        Interesting, much improved agile culture beyond Scrum
-                    </p>
+                    <h3>{{video.title}}</h3>
+                    <p>{{video.description}}</p>
                     <h4 class="rating">
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart-empty"></span>
-                        <span class="label label-success">4 out of 5</span>
-                    </h4>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="thumbnail">
-                <iframe width="210" height="157" src="https://www.youtube.com/embed/tsk0pWf4ipw" frameborder="0" allowfullscreen></iframe>
-                <div class="caption">
-                    <h3>Containerizing the Cloud with Docker on Google Cloud Platform</h3>
-                    <p>
-                        New technology, docker management
-                    </p>
-                    <h4 class="rating">
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart-empty"></span>
-                        <span class="label label-success">4 out of 5</span>
-                    </h4>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="thumbnail">
-                <iframe width="210" height="157" src="https://www.youtube.com/embed/bo36MrBfTk4" frameborder="0" allowfullscreen></iframe>
-                <div class="caption">
-                    <h3>Javascript the good parts</h3>
-                    <p>
-                        Good story teller
-                    </p>
-                    <h4 class="rating">
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart-empty"></span>
-                        <span class="label label-success">4 out of 5</span>
-                    </h4>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="thumbnail">
-                <iframe src="//player.vimeo.com/video/110554082" width="240" height="135" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <div class="caption">
-                    <h3>One way hacker - Erik Meijer</h3>
-                    <p>
-                        No consistent story, good message, extreme ideas, good comparison with army organization
-                    </p>
-                    <h4 class="rating">
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <span class="glyphicon glyphicon-heart-empty"></span>
-                        <span class="label label-success">4 out of 5</span>
+                        <span ng-repeat="i in [1, 2, 3, 4, 5]" class="glyphicon" ng-class="(i <= video.rating) ? 'glyphicon-heart' : 'glyphicon-heart-empty'"></span>
+                        <span class="label label-success">{{video.rating}} out of 5</span>
                     </h4>
                 </div>
             </div>
@@ -135,6 +55,8 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+<script src="scripts/app.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
