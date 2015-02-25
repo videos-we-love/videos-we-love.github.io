@@ -132,7 +132,7 @@
                     <option>Popular</option>
                     <option>Highest Rating</option>
                     <option>Lowest Rating</option>
-                </select><span><strong>4</strong> Titles Found</span>
+                </select><span><strong>{{filteredVideos.length}}</strong> titles found</span>
                 </div>
 
                 <!-- End Options Bar -->
@@ -143,7 +143,7 @@
                 <div class="row-fluid">
                     <ul class="thumbnails">
 
-                        <li class="span4" ng-repeat="video in main.videos | filter: video">
+                        <li class="span4" ng-repeat="video in filteredVideos = (main.videos | filter: video)">
                             <div class="thumbnail">
                                 <!--<img data-src="holder.js/300x200" alt="300x200"  src="http://placehold.it/300x400">-->
                                 <iframe width="270" height="200" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
