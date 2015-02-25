@@ -1,13 +1,10 @@
-.starter-template {
-    padding: 40px 15px;
-    text-align: center;
+.truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.footer {
-    padding-top: 50px;
-    text-align: center;
-}
-
-.glyphicon-heart {
-    color:red;
+.icon-heart {
+    color: red;
 }

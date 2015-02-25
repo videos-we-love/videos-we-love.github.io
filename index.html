@@ -28,8 +28,13 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jkit.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,34 +45,218 @@
 
 <body ng-app="app" ng-controller="MainController as main">
 
-<div class="container">
-    <div class="starter-template">
-        <h1>Videos we Love <span class="glyphicon glyphicon-heart"></span></h1>
 
-        <p class="lead">We've seen some awesome tech-videos and we want to share them with you<br> Please let us know what you think.</p>
-    </div>
 
-    <div class="row">
-        <div class="col-md-3" ng-repeat="video in main.videos">
-            <div class="thumbnail">
-                <iframe width="210" height="157" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
-                <div class="caption">
-                    <h3>{{video.title}}</h3>
-                    <p>{{video.description}}</p>
-                    <h4 class="rating">
-                        <span ng-repeat="i in [1, 2, 3, 4, 5]" class="glyphicon" ng-class="(i <= video.rating) ? 'glyphicon-heart' : 'glyphicon-heart-empty'"></span>
-                        <span class="label label-success">{{video.rating}} out of 5</span>
-                    </h4>
-                </div>
+
+
+<!-- Start Header -->
+
+<div id="header">
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a href="/"><h1>Videos We Love <i class="icon-heart"></i></h1></a>
+                <div class="nav-collapse collapse">
+                    <form class="navbar-form pull-left">
+                        <div class="input-append">
+                            <input class="span3" id="appendedInputButtons" type="text" ng-model="video.title">
+                            <button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+                        </div>
+                    </form>
+                    <ul class="nav">
+                        <li class="active"><a href="#">Technical</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Academic</a></li>
+<!--
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="404.htm">404 Page</a></li>
+                                <li><a href="page-elements.htm">Page elements</a></li>
+                                <li><a href="login.htm">Login Page</a></li>
+                                <li><a href="register.htm">Register Page</a></li>
+                                <li><a href="pricing-plans.htm">Pricing Plans</a></li>
+                            </ul>
+                        </li>
+-->
+                    </ul>
+<!--
+                    <p class="navbar-text pull-right">
+                        <a href="login.htm" class="navbar-link">login</a> or <a href="register.htm"   class="navbar-link">register</a>
+                    </p>
+-->
+                </div><!--/.nav-collapse -->
             </div>
         </div>
     </div>
-
-    <footer class="footer">
-        <p><a href="mailto:feedback@videoswelove.org">feedback@videoswelove.org</a></p>
-    </footer>
 </div>
-<!-- /.container -->
+
+<!-- End Header -->
+
+
+
+<div class="container">
+
+    <!-- Start Info Unit -->
+<!--
+
+    <div id="info-unit"> <div class="alert alert-block alert-info fade in">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <h4 class="alert-heading">Your one stop destination for all things you watch.</h4>
+        <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p><a class="btn btn-primary" href="#">Join Watchopolis</a> <a class="btn btn-success" href="#">Or do this</a></p>
+    </div>
+    </div>
+-->
+
+    <!-- End Info Unit -->
+
+
+    <div>
+
+
+
+        <div class="row-fluid" >
+            <div class="span9 main-section">
+
+
+                <!-- Options bar (Left Section) -->
+
+                <div class="options-bar"><select class="span2 pull-left"><option>Sort By </option>
+                    <option>Date</option>
+                    <option>Popular</option>
+                    <option>Highest Rating</option>
+                    <option>Lowest Rating</option>
+                </select><span><strong>4</strong> Titles Found</span>
+                </div>
+
+                <!-- End Options Bar -->
+
+
+                <!-- Start Left Section -->
+
+                <div class="row-fluid">
+                    <ul class="thumbnails">
+
+                        <li class="span4" ng-repeat="video in main.videos | filter: video">
+                            <div class="thumbnail">
+                                <!--<img data-src="holder.js/300x200" alt="300x200"  src="http://placehold.it/300x400">-->
+                                <iframe width="270" height="200" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
+
+                                <div class="caption">
+                                    <h6 class="truncate"><a href="">{{video.title}}</a></h6>
+                                    <p>{{video.description}}</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="pagination pagination-small pull-right">
+                    <ul>
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- End Left Section -->
+
+            <!-- Start Right Section -->
+
+            <div id="side-section" class="span3">
+                <ul class="nav nav-list">
+                    <li class="nav-header">filter by</li>
+                    <li class="active"><a href="#"><i class="icon-time"></i> Recently added</a></li>
+                    <li><a href="#"><i class="icon-heart-empty"></i> Most Popular</a></li>
+                    <li><a href="#"><i class="icon-star-empty"></i> Highest Rating</a></li>
+                </ul>
+
+                <div class="module-top"><i class="icon-comments"></i> Latest Comments</div>
+                <div class="module">
+                    <ul class="comment-list">
+                        <li class="comment">
+                            <div class="comment-body">
+                                <h4 class="comment-heading">Comment title <span class="time">4:34am</span></h4>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at.</p>
+                            </div>
+                        </li>
+                        <li class="comment">
+                            <div class="comment-body">
+                                <h4 class="comment-heading">Comment title <span class="time">4:34am</span></h4>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at.</p>
+                            </div>
+                        </li><li class="comment">
+                        <div class="comment-body">
+                            <h4 class="comment-heading">Comment title <span class="time">4:34am</span></h4>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at.</p>
+                        </div>
+                    </li><li class="comment">
+                        <div class="comment-body">
+                            <h4 class="comment-heading">Comment title <span class="time">4:34am</span></h4>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at.</p>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span6"> <p class="copyright"><img class="foot-logo" src="img/logo-ts.png" alt="Brand Logo"/> &copy; 2015 <strong>Videos We Love<span class="glyphicon glyphicon-heart"></span></strong> A collection of handpicked technical, academic and science videos</p></div>
+            <div class="span6">   <div class="pagination pull-right">
+                <ul>
+                    <li><a data-rel="tooltip" data-placement="top" data-original-title="Follow us on Twitter" href="http://www.twitter.com/videos_we_love"><i class="icon-twitter"></i></a></li>
+                    <!--<li><a data-rel="tooltip" data-placement="top" data-original-title="Share us on Pinterest" href="#"><i class="icon-pinterest"></i></a></li>-->
+                    <!--<li><a data-rel="tooltip" data-placement="top" data-original-title="Like us on Facebook" href="#"><i class="icon-facebook"></i></a></li>-->
+                    <!--<li><a data-rel="tooltip" data-placement="top" data-original-title="+1 us on Google+" href="#"><i class="icon-google-plus"></i></a></li>-->
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Include Javascript/JQuery Assets
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.jkit.1.1.10.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+
+
+<script type="text/javascript">
+    $("[data-rel=tooltip]").tooltip();
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('body').jKit();
+    });
+</script>
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

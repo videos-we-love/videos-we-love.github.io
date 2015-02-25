@@ -2,6 +2,7 @@
   "videos": [
     {
       "title":"Spotify Culture Part 1 + 2",
+      "description":"Lorem Ipsum",
       "rating":"4",
       "comment":"Interesting, much improved agile culture beyond Scrum",
       "videoSource": {
@@ -11,6 +12,7 @@
     },
     {
       "title":"Containerizing the Cloud with Docker on Google Cloud Platform",
+      "description":"Lorem Ipsum",
       "rating":"4",
       "comment":"New technology, docker management",
       "videoSource": {
@@ -20,6 +22,7 @@
     },
     {
       "title":"Javascript the good parts",
+      "description":"Lorem Ipsum",
       "rating":"4",
       "comment":"Good story teller",
       "videoSource": {
@@ -29,6 +32,7 @@
     },
     {
       "title":"One way hacker - Erik Meijer",
+      "description":"Lorem Ipsum",
       "rating":"4",
       "comment":"No consistent story, good message, extreme ideas, good comparison with army organization",
       "videoSource": {
