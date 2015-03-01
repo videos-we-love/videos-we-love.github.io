@@ -74,7 +74,7 @@
       "rating":"7.3",
       "comment":"Good presentor, interesting approach, different from CRUD. Lacking technical details.",
       "videoSource": {
-        "link":"https://vimeo.com/19428577",
+        "link":"//player.vimeo.com/video/19428577",
         "type":"vimeo"
       }
     }
