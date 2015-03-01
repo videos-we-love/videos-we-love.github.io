@@ -65,6 +65,18 @@
         "link":"https://www.youtube.com/embed/Q5POuMHxW-0",
         "type":"youtube"
       }
+    },
+    {
+      "title":"Unleash Your Domain",
+      "dateAdded": "2015-03-01T16:33:43.511Z",
+      "description":"Our application runs over 10,000 sustained transactions per second with a rich model. The key? Modeling state transitions explicitly. In today's world many systems have non–functional requirements that prevent them from being single database centric. This presentation looks at how Domain Driven Design can fit into such environments including extremely large scale web sites, batch processing, and even using highly scalable backing stores such as CouchDb or HyperTable.",
+      "speakers": ["Greg Young"],
+      "rating":"7.3",
+      "comment":"Good presentor, interesting approach, different from CRUD. Lacking technical details.",
+      "videoSource": {
+        "link":"https://vimeo.com/19428577",
+        "type":"vimeo"
+      }
     }
   ]
 }
