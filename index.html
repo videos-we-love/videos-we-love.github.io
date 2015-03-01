@@ -154,11 +154,16 @@
 
                 <div class="row-fluid">
                     <ul class="thumbnails">
-
-                        <li class="span4" ng-repeat="video in filteredVideos = (main.videos | filter: video)">
+                        <li class="span4" ng-repeat="video in filteredVideos = (main.videos | orderBy: 'dateAdded':true | filter: video)">
                             <div class="thumbnail">
                                 <!--<img data-src="holder.js/300x200" alt="300x200"  src="http://placehold.it/300x400">-->
-                                <iframe width="265" height="200" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
+                                    <div ng-if="video.videoSource.preview">
+                                        <img src="{{video.videoSource.preview | trustAsResourceUrl}}" width="265" height="200" />
+                                    </div>
+                                    <div ng-if="!video.videoSource.preview">
+                                        <iframe width="265" height="200" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+
 
                                 <div class="caption">
                                     <h6 class="truncate"><a href="{{video.videoSource.link}}">{{video.title}}</a></h6>
@@ -275,6 +280,7 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js"></script>
 <script src="scripts/app.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

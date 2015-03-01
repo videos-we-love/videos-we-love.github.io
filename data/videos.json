@@ -2,7 +2,8 @@
   "videos": [
     {
       "title":"Spotify Culture Part 1 + 2",
-      "description":"Lorem Ipsum",
+      "dateAdded": "2015-02-24T16:33:43.511Z",
+      "description":"An attempt to describe Spotify engineering culture. This is a journey in progress, not a journey completed.",
       "speakers": ["Henrik Kniberg"],
       "rating":"7.875",
       "comment":"Interesting, much improved agile culture beyond Scrum",
@@ -13,7 +14,8 @@
     },
     {
       "title":"Containerizing the Cloud with Docker on Google Cloud Platform",
-      "description":"Lorem Ipsum",
+      "dateAdded": "2015-02-24T16:33:43.511Z",
+      "description":"Have you ever wondered about the core technologies that enable Google to rapidly build reliable distributed systems, while simultaneously increasing data center reliability and efficiency? In 2006, Google developed Linux container technology that enabled world leading fleet utilization, efficiency and scale. More recently, these same core technologies formed the foundation of Docker, the popular, new open source container environment. ",
       "speakers": ["Brendan Burns", "Craig McLuckie"],
       "rating":"7.5",
       "comment":"New technology, docker management",
@@ -24,7 +26,8 @@
     },
     {
       "title":"Javascript the good parts",
-      "description":"Lorem Ipsum",
+      "description":"Douglas Crockford is known as The JavaScript Guy. He’s famous not only for his O’Reilly book JavaScript: The Good Parts but even more so as the visionary behind the JSON data format as well as the JSLint tool.",
+      "dateAdded": "2015-02-24T16:33:43.511Z",
       "speakers": ["Douglas Crockford"],
       "rating":"7.5",
       "comment":"Good story teller",
@@ -35,7 +38,8 @@
     },
     {
       "title":"One way hacker",
-      "description":"Lorem Ipsum",
+      "dateAdded": "2015-02-26T16:33:43.511Z",
+      "description":"One Hacker Way, a Rational Alternative to Agile",
       "speakers": ["Erik Meijer"],
       "rating":"7.375",
       "comment":"No consistent story, good message, extreme ideas, good comparison with army organization",
@@ -46,18 +50,21 @@
     },
     {
       "title":"Facebook Release Process",
-      "description":"Lorem Ipsum",
+      "dateAdded": "2015-02-26T16:33:43.511Z",
+      "description":"Chuck Rossi unveils some of the tools and processes used by Facebook for pushing new updates every day.",
       "speakers": ["Chuck Rossi"],
       "rating":"7.125",
       "comment":"Nice tools, good culture for massive changes, advanced gatekeeper, irc bots, boring",
       "videoSource": {
         "link":"http://www.infoq.com/presentations/Facebook-Release-Process",
-        "type":"infoq"
+        "type":"infoq",
+        "preview": "http://www.infoq.com/resource/presentations/Facebook-Release-Process/en/slides/sl1.jpg"
       }
     },
     {
       "title":"Introduction to Docker",
-      "description":"Lorem Ipsum",
+      "dateAdded": "2015-02-26T16:33:43.511Z",
+      "description":"dotCloud founder and CTO Solomon Hykes recently stopped by Twitter HQ to show us Docker, an open source project designed to easily create lightweight, portable, self-sufficient containers from any application.",
       "speakers": ["Solomon Hykes"],
       "rating":"7",
       "comment":"Good demo, good intro, end was information sparse",
