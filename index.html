@@ -4,50 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A collection of the best handpicked videos about science, technology and academic subjects.">
-    <title>Videos we Love</title>
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-
-    <!-- http://ogp.me/ -->
-    <meta property="og:title" content="Videos We Love" />
-    <meta property="og:description" content="A collection of the best handpicked videos about science, technology and academic subjects." />
-    <meta property="og:url" content="http://www.videoswelove.org" />
-    <meta property="og:image" content="https://pbs.twimg.com/profile_images/569601610502774784/sEygc7DX_400x400.png" />
-
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Starter Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/jkit.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/app.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"/>
 
-    <!-- Needs to be here for ngCloak to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
-
+    <link rel="stylesheet" href="css/app.css"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
+
+    <!-- Needs to be here for ngCloak to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.12.1.min.js"></script>
+
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -55,227 +28,125 @@
 
 <body ng-app="app" ng-controller="MainController as main">
 
-<a href="https://github.com/videos-we-love/videos-we-love.github.io"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 100" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+<a href="https://github.com/videos-we-love/videos-we-love.github.io"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 100000" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 
-
-
-
-<!-- Start Header -->
-
-<div id="header">
-    <div class="navbar navbar-static-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <a href="/"><h1>Videos We Love <i class="icon-heart"></i></h1></a>
-                <div class="nav-collapse collapse">
-                    <form class="navbar-form pull-left">
-                        <div class="input-append">
-                            <input class="span3" id="appendedInputButtons" type="text" ng-model="video.title">
-                            <button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
-                        </div>
-                    </form>
-                    <ul class="nav">
-                        <li class="active"><a href="#">Technical</a></li>
-                        <li><a href="#">Science</a></li>
-                        <li><a href="#">Academic</a></li>
-<!--
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="404.htm">404 Page</a></li>
-                                <li><a href="page-elements.htm">Page elements</a></li>
-                                <li><a href="login.htm">Login Page</a></li>
-                                <li><a href="register.htm">Register Page</a></li>
-                                <li><a href="pricing-plans.htm">Pricing Plans</a></li>
-                            </ul>
-                        </li>
--->
-                    </ul>
-<!--
-                    <p class="navbar-text pull-right">
-                        <a href="login.htm" class="navbar-link">login</a> or <a href="register.htm"   class="navbar-link">register</a>
-                    </p>
--->
-                </div><!--/.nav-collapse -->
-            </div>
+<div class="navbar navbar-inverse " role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Videos We Love <i class="fa fa-heart" style="color: red;"></i> </a>
         </div>
+        <div class="collapse navbar-collapse">
+            <!--
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+            -->
+            <form class="navbar-form navbar-right">
+                <input ng-model="video.title" type="text" class="form-control" placeholder="Search...">
+            </form>
+        </div>
+        <!--/.nav-collapse -->
     </div>
 </div>
-
-<!-- End Header -->
-
-
 
 <div class="container">
 
-    <!-- Start Info Unit -->
-<!--
+    <div ng-cloak class="well ng-cloak">
 
-    <div id="info-unit"> <div class="alert alert-block alert-info fade in">
-        <button type="button" class="close" data-dismiss="alert">×</button>
-        <h4 class="alert-heading">Your one stop destination for all things you watch.</h4>
-        <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-        <p><a class="btn btn-primary" href="#">Join Watchopolis</a> <a class="btn btn-success" href="#">Or do this</a></p>
-    </div>
-    </div>
--->
-
-    <!-- End Info Unit -->
-
-
-    <div>
-
-
-
-        <div class="row-fluid" >
-            <div class="span9 main-section">
-
-
-                <!-- Options bar (Left Section) -->
-
-                <div class="options-bar" ng-cloak class="ng-cloak">
-                    <select class="span2 pull-left"><option>Sort By </option>
-                        <option>Date</option>
-                        <option>Popular</option>
-                        <option>Highest Rating</option>
-                        <option>Lowest Rating</option>
-                    </select>
-                    <span><strong>{{filteredVideos.length}}</strong> titles found</span>
-                </div>
-
-                <!-- End Options Bar -->
-
-
-                <!-- Start Left Section -->
-
-                <div class="row-fluid">
-                    <ul class="thumbnails">
-                        <li class="span4" ng-repeat="video in filteredVideos = (main.videos | orderBy: 'dateAdded':true | filter: video)">
-                            <div class="thumbnail">
-                                <!--<img data-src="holder.js/300x200" alt="300x200"  src="http://placehold.it/300x400">-->
-                                    <div ng-if="video.videoSource.preview">
-                                        <img src="{{video.videoSource.preview | trustAsResourceUrl}}" width="265" height="200" />
-                                    </div>
-                                    <div ng-if="!video.videoSource.preview">
-                                        <iframe width="265" height="200" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-
-
-                                <div class="caption">
-                                    <h6 class="truncate"><a href="{{video.videoSource.link}}">{{video.title}}</a></h6>
-                                    <p>{{video.description}}</p>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="pagination pagination-small pull-right">
-                    <ul>
-                        <li><a href="#">«</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">»</a></li>
-                    </ul>
-                </div>
-
-
+        <div class="row">
+            <div class="col-md-6">
+                <select class="form-control pull-left" ng-model="order" >
+                    <option value="dateAdded">Date</option>
+                    <option value="duration">Duration</option>
+                    <option value="rating">Rating</option>
+                </select>
             </div>
-
-            <!-- End Left Section -->
-
-            <!-- Start Right Section -->
-
-            <div id="side-section" class="span3">
-                <ul class="nav nav-list">
-                    <li class="nav-header">filter by</li>
-                    <li class="active"><a href="#"><i class="icon-time"></i> Recently added</a></li>
-                    <li><a href="#"><i class="icon-heart-empty"></i> Most Popular</a></li>
-                    <li><a href="#"><i class="icon-star-empty"></i> Highest Rating</a></li>
-                </ul>
-
-                <div class="module-top"><i class="icon-comments"></i> Latest Comments</div>
-                <div class="module">
-                    <ul class="comment-list">
-                        <li class="comment">
-                            <div class="comment-body">
-                                <h4 class="comment-heading">Comment title <span class="time">4:34am</span></h4>
-                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at.</p>
-                            </div>
-                        </li>
-                        <li class="comment">
-                            <div class="comment-body">
-                                <h4 class="comment-heading">Comment title <span class="time">4:34am</span></h4>
-                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at.</p>
-                            </div>
-                        </li><li class="comment">
-                        <div class="comment-body">
-                            <h4 class="comment-heading">Comment title <span class="time">4:34am</span></h4>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at.</p>
-                        </div>
-                    </li><li class="comment">
-                        <div class="comment-body">
-                            <h4 class="comment-heading">Comment title <span class="time">4:34am</span></h4>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at.</p>
-                        </div>
-                    </li>
-                    </ul>
-                </div>
+            <div class="col-md-6">
+                <!--<span class="pull-right">$42</span>-->
+                <span class="pull-right"><strong>{{filteredVideos.length}}</strong> titles found</span>
             </div>
         </div>
-        <hr>
+
+
+
     </div>
-</div>
+
+
+    <div class="well" ng-repeat="video in filteredVideos = (main.videos | orderBy: order:true | filter: video)" ng-cloak class="ng-cloak">
+        <div class="media">
+            <a class="pull-left" href="#">
+                <div ng-if="video.videoSource.preview">
+                    <img src="{{video.videoSource.preview | trustAsResourceUrl}}" width="265" height="200" />
+                </div>
+                <div ng-if="!video.videoSource.preview">
+                    <iframe width="265" height="200" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">{{video.title}}</h4>
+                <p>
+                <ul style="list-style-type: none; padding: 5px;">
+                    <li ng-repeat="speaker in video.speakers"> {{ speaker }} </li>
+                </ul>
+                </p>
+                <p>{{video.description}}</p>
+                <ul class="list-inline list-unstyled bottom-align-text">
+                    <li><span><i class="glyphicon glyphicon-time"></i> {{video.duration}} min</span></li>
+                    <li>|</li>
+                    <span><i class="glyphicon glyphicon-comment"></i> 0 comments</span>
+                    <li>|</li>
+
+                    <li>
+                        <div ng-controller="RatingDemoCtrl">
+                            <rating ng-model="video.rating" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating> <b>(<i>Rating</i> {{video.rating}})</b>
+                        </div>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                        <span><i class="fa fa-facebook-square"></i></span>
+                        <span><i class="fa fa-twitter-square"></i></span>
+                        <span><i class="fa fa-google-plus-square"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div><!-- /.container -->
 
 
 <footer class="footer">
-    <div class="container">
-        <div class="row-fluid">
-            <div class="span6"> <p class="copyright"><img class="foot-logo" src="img/logo-ts.png" alt="Brand Logo"/> &copy; 2015 <strong>Videos We Love<span class="glyphicon glyphicon-heart"></span></strong> A collection of handpicked technical, academic and science videos</p></div>
-            <div class="span6">   <div class="pagination pull-right">
-                <ul>
-                    <li><a data-rel="tooltip" data-placement="top" data-original-title="Follow us on Twitter" href="http://www.twitter.com/videos_we_love"><i class="icon-twitter"></i></a></li>
-                    <li><a data-rel="tooltip" data-placement="top" data-original-title="Fork us on GitHub" href="https://github.com/videos-we-love/videos-we-love.github.io"><i class="icon-github"></i></a></li>
-                    <li><a data-rel="tooltip" data-placement="top" data-original-title="See our Video List on Google" href="https://docs.google.com/spreadsheets/d/1r_JyMcY7fw0VSuSRZv35JrSmHUd4x8k6ycPj09X3Iog/edit?usp=sharing"><i class="icon-list"></i></a></li>
-                    <!--<li><a data-rel="tooltip" data-placement="top" data-original-title="Share us on Pinterest" href="#"><i class="icon-pinterest"></i></a></li>-->
-                    <!--<li><a data-rel="tooltip" data-placement="top" data-original-title="Like us on Facebook" href="#"><i class="icon-facebook"></i></a></li>-->
-                    <!--<li><a data-rel="tooltip" data-placement="top" data-original-title="+1 us on Google+" href="#"><i class="icon-google-plus"></i></a></li>-->
+
+    <div class="well">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <p>&copy; 2015 <strong>Videos We Love<span class="glyphicon glyphicon-heart"></span></strong> A collection of handpicked technical, academic and science videos</p>
+                </div>
+                <div class="col-md-3">
+                    <!--<span class="pull-right">$42</span>-->
+            <span class="pull-right">
+                <ul class="list-inline list-unstyled">
+                    <li><a data-rel="tooltip" data-placement="top" data-original-title="Follow us on Twitter" href="http://www.twitter.com/videos_we_love"><i class="fa fa-twitter"></i></a></li>
+                    <li><a data-rel="tooltip" data-placement="top" data-original-title="Fork us on GitHub" href="https://github.com/videos-we-love/videos-we-love.github.io"><i class="fa fa-github"></i></a></li>
+                    <li><a data-rel="tooltip" data-placement="top" data-original-title="See our Video List on Google" href="https://docs.google.com/spreadsheets/d/1r_JyMcY7fw0VSuSRZv35JrSmHUd4x8k6ycPj09X3Iog/edit?usp=sharing"><i class="fa fa-list"></i></a></li>
                 </ul>
+            </span>
+                </div>
             </div>
-            </div>
+
         </div>
     </div>
 </footer>
 
-
-
-<!-- Include Javascript/JQuery Assets
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.jkit.1.1.10.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-
-
-<script type="text/javascript">
-    $("[data-rel=tooltip]").tooltip();
-</script>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('body').jKit();
-    });
-</script>
 
 
 <!-- Bootstrap core JavaScript
@@ -283,7 +154,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js"></script>
 <script src="scripts/app.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
