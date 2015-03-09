@@ -14,6 +14,19 @@
       }
     },
     {
+      "title":"History of Programming: Part 1",
+      "dateAdded": "2015-03-09T16:55:43.511Z",
+      "description":"Join Mark on a quick-fire, whistle-stop, shallow-to-the-point-of-vacuous tour through the history of programming and programming languages, from the surprise twist at the beginning, through the Golden Age of LISP, C and Smalltalk, right up to the present day. What was the Greatest Programming Language ever? Which is better: dynamic or static typing? Why is Java? What does the future of programming hold for the brave adventurer? Discover the answers to none of these questions or indeed any others in this utterly pointless but hopefully entertaining talk. Warning: not suitable for children or IT managers.",
+      "speakers": ["Mark Rendle"],
+      "rating":7.9,
+      "duration":42,
+      "comment":"",
+      "videoSource": {
+        "link":"//player.vimeo.com/video/97541186",
+        "type":"vimeo"
+      }
+    },
+    {
       "title":"Containerizing the Cloud with Docker on Google Cloud Platform",
       "dateAdded": "2015-02-24T16:33:43.511Z",
       "description":"Have you ever wondered about the core technologies that enable Google to rapidly build reliable distributed systems, while simultaneously increasing data center reliability and efficiency? In 2006, Google developed Linux container technology that enabled world leading fleet utilization, efficiency and scale. More recently, these same core technologies formed the foundation of Docker, the popular, new open source container environment. ",
