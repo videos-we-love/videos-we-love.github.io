@@ -20,7 +20,7 @@ angular.module('app', [
             return route === $location.path();
         }
     })
-    .controller('RatingController', function ($scope) {
+    .controller('RatingDemoCtrl', function ($scope) {
         $scope.max = 10;
         $scope.isReadonly = true;
     })
