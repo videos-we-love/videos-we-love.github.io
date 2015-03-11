@@ -1,0 +1,66 @@
+<div ng-cloak class="well ng-cloak">
+
+    <div class="row">
+        <div class="col-md-6">
+            <select class="form-control pull-left" ng-model="order" >
+                <option value="dateAdded">Date</option>
+                <option value="duration">Duration</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <!--<span class="pull-right">$42</span>-->
+            <span class="pull-right"><strong>{{filteredVideos.length}}</strong> titles found</span>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10">
+        <div class="well" ng-repeat="video in filteredVideos = (main.videos | orderBy: order:true | filter: video)" ng-cloak class="ng-cloak">
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <div ng-if="video.videoSource.preview">
+                        <img src="{{video.videoSource.preview | trustAsResourceUrl}}" width="265" height="200" />
+                    </div>
+                    <div ng-if="!video.videoSource.preview">
+                        <iframe width="265" height="200" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">{{video.title}}</h4>
+                    <p>
+                    <ul style="list-style-type: none; padding: 5px;">
+                        <li ng-repeat="speaker in video.speakers"> {{ speaker }} </li>
+                    </ul>
+                    </p>
+                    <p>{{video.description}}</p>
+                    <ul class="list-inline list-unstyled bottom-align-text">
+                        <li><span><i class="glyphicon glyphicon-time"></i> {{video.duration}} min</span></li>
+                        <li>|</li>
+                        <span><i class="glyphicon glyphicon-comment"></i> 0 comments</span>
+                        <li>|</li>
+
+                        <li>
+                            <div ng-controller="RatingController">
+                                <rating ng-model="video.rating" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating> <b>(<i>Rating</i> {{video.rating}})</b>
+                            </div>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                            <span><i class="fa fa-facebook-square"></i></span>
+                            <span><i class="fa fa-twitter-square"></i></span>
+                            <span><i class="fa fa-google-plus-square"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <a class="twitter-timeline" href="https://twitter.com/videos_we_love" data-widget-id="575338421306138624">Tweets door @videos_we_love</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+</div>
+</div><!-- /.container -->
