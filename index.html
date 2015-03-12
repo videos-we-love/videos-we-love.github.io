@@ -68,7 +68,7 @@
 
 <a href="https://github.com/videos-we-love/videos-we-love.github.io"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 100000" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 
-<div class="navbar navbar-inverse " role="navigation">
+<div class="navbar navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -94,7 +94,14 @@
 
 <div class="container">
 
-    <div ng-view></div>
+    <div class="row">
+        <div class="col-md-10" ng-view></div>
+        <div class="col-md-2">
+            <a class="twitter-timeline" href="https://twitter.com/videos_we_love" data-widget-id="575338421306138624">Tweets door @videos_we_love</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+    </div>
+</div>
 
 <footer class="footer">
 
@@ -122,12 +129,6 @@
         </div>
     </div>
 </footer>
-
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="scripts/app.js"></script>
@@ -139,7 +140,6 @@
 
     ga('create', 'UA-60051990-1', 'auto');
     ga('send', 'pageview');
-
 </script>
 </body>
 </html>
