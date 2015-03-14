@@ -1,14 +1,14 @@
-<div ng-cloak class="well ng-cloak">
+<div class="well">
     <div class="row">
         <div class="col-md-6">
-            <select class="form-control pull-left" ng-model="order" >
+            <select class="form-control pull-left" ng-model="order">
                 <option value="dateAdded">Date</option>
                 <option value="duration">Duration</option>
                 <option value="rating">Rating</option>
             </select>
         </div>
         <div class="col-md-6">
-            <span class="pull-right"><strong>{{filteredVideos.length}}</strong> titles found</span>
+            <span class="pull-right"><strong ng-cloak>{{filteredVideos.length}}</strong> titles found</span>
         </div>
     </div>
 </div>
