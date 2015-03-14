@@ -1,6 +1,7 @@
 .well {
     position: relative;
     background-color: #fff;
+    padding: 10px 30px 20px;
 }
 
 .bottom-align-text {

@@ -1,35 +1,41 @@
-<div class="well">
-    <div class="row">
-        <div class="col-md-6">
-            <select class="form-control pull-left" ng-model="order">
-                <option value="dateAdded">Date</option>
-                <option value="duration">Duration</option>
-                <option value="rating">Rating</option>
-            </select>
-        </div>
-        <div class="col-md-6">
-            <span class="pull-right"><strong ng-cloak>{{filteredVideos.length}}</strong> titles found</span>
+<!--<div class="well">-->
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6">
+                <select class="form-control pull-left" ng-model="order">
+                    <option value="dateAdded">Date</option>
+                    <option value="duration">Duration</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <span class="pull-right"><strong ng-cloak>{{filteredVideos.length}}</strong> titles found</span>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="row">
-    <div class="well" ng-repeat="video in filteredVideos = (main.videos | orderBy: order:true | filter: video)" ng-cloak class="ng-cloak">
+<!--</div>-->
+<div class="well" ng-repeat="video in filteredVideos = (main.videos | orderBy: order:true | filter: video)" ng-cloak class="ng-cloak">
+    <div class="row">
         <div class="media">
             <a class="pull-left" href="#">
                 <div ng-if="video.videoSource.preview">
-                    <img src="{{video.videoSource.preview | trustAsResourceUrl}}" width="265" height="200" />
+                    <img src="{{video.videoSource.preview | trustAsResourceUrl}}" width="265" height="200"/>
                 </div>
                 <div ng-if="!video.videoSource.preview">
                     <iframe width="265" height="200" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
                 </div>
             </a>
+
             <div class="media-body">
                 <h4 class="media-heading">{{video.title}}</h4>
+
                 <p>
-                <ul style="list-style-type: none; padding: 5px;">
-                    <li ng-repeat="speaker in video.speakers"> {{ speaker }} </li>
-                </ul>
+                    <ul style="list-style-type: none; padding: 5px;">
+                        <li ng-repeat="speaker in video.speakers"> {{ speaker }}</li>
+                    </ul>
                 </p>
                 <p>{{video.description}}</p>
                 <ul class="list-inline list-unstyled bottom-align-text">
@@ -40,7 +46,8 @@
 
                     <li>
                         <div ng-controller="RatingDemoCtrl">
-                            <rating ng-model="video.rating" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating> <b>(<i>Rating</i> {{video.rating}})</b>
+                            <rating ng-model="video.rating" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+                            <b>(<i>Rating</i> {{video.rating}})</b>
                         </div>
                     </li>
                     <li>|</li>
