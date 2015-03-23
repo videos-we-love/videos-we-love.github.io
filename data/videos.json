@@ -130,6 +130,19 @@
         "link":"https://www.youtube.com/embed/Iwpi1Lm6dFo",
         "type":"youtube"
       }
+    },
+    {
+      "title":"React 2014 : Erik Meijer - What does it mean to be Reactive?",
+      "dateAdded": "2015-03-23T14:00:00Z",
+      "description":"The inimitable Erik Meijer delivering his opening keynote to React 2014",
+      "speakers": ["Erik Meijer"],
+      "rating":8.1,
+      "duration":46,
+      "comment":"A nice talk to have a good understanding of Reactive Programming without buzzwords.",
+      "videoSource": {
+        "link":"http://www.youtube.com/embed/sTSQlYX5DU0",
+        "type":"youtube"
+      }
     }
   ]
 }
