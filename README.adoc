@@ -4,4 +4,4 @@ This is the main site for Videos we Love.
 
 == Backlog
 
-image::https://badge.waffle.io/videos-we-love/videos-we-love.github.io.png?label=ready&title=ready[link="http://waffle.io/videos-we-love/videos-we-love.github.io.png"]
+image::https://badge.waffle.io/videos-we-love/videos-we-love.github.io.png?label=ready&title=ready[link="http://waffle.io/videos-we-love/videos-we-love.github.io"]
