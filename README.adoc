@@ -1,5 +1,7 @@
 = Videos we love
 
+image:https://badges.gitter.im/Join%20Chat.svg[link="https://gitter.im/videos-we-love/videos-we-love.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"]
+
 This is the main site for Videos we Love.
 
 == Backlog
