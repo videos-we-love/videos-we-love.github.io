@@ -5,3 +5,8 @@ This is the main site for Videos we Love.
 == Backlog
 
 image::https://badge.waffle.io/videos-we-love/videos-we-love.github.io.png?label=ready&title=ready[link="http://waffle.io/videos-we-love/videos-we-love.github.io"]
+
+
+== Contact
+
+image::https://badges.gitter.im/Join%20Chat.svg[link="https://gitter.im/videos-we-love/videos-we-love.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"]
