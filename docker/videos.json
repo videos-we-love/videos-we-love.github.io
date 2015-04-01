@@ -1,0 +1,161 @@
+{
+  "videos": [
+    {
+      "title":"Spotify Culture Part 1 + 2",
+      "dateAdded": "2015-02-24T16:33:43.511Z",
+      "description":"An attempt to describe Spotify engineering culture. This is a journey in progress, not a journey completed.",
+      "speakers": ["Henrik Kniberg"],
+      "rating":7.88,
+      "duration":26,
+      "comment":"Interesting, much improved agile culture beyond Scrum",
+      "videoSource": {
+        "link":"https://www.youtube.com/embed/Mpsn3WaI_4k",
+        "type":"youtube"
+      }
+    },
+    {
+      "title":"History of Programming: Part 1",
+      "dateAdded": "2015-03-09T16:55:43.511Z",
+      "description":"Join Mark on a quick-fire, whistle-stop, shallow-to-the-point-of-vacuous tour through the history of programming and programming languages, from the surprise twist at the beginning, through the Golden Age of LISP, C and Smalltalk, right up to the present day. What was the Greatest Programming Language ever? Which is better: dynamic or static typing? Why is Java? What does the future of programming hold for the brave adventurer? Discover the answers to none of these questions or indeed any others in this utterly pointless but hopefully entertaining talk. Warning: not suitable for children or IT managers.",
+      "speakers": ["Mark Rendle"],
+      "rating":7.9,
+      "duration":42,
+      "comment":"",
+      "videoSource": {
+        "link":"//player.vimeo.com/video/97541186",
+        "type":"vimeo"
+      }
+    },
+    {
+      "title":"Containerizing the Cloud with Docker on Google Cloud Platform",
+      "dateAdded": "2015-02-24T16:33:43.511Z",
+      "description":"Have you ever wondered about the core technologies that enable Google to rapidly build reliable distributed systems, while simultaneously increasing data center reliability and efficiency? In 2006, Google developed Linux container technology that enabled world leading fleet utilization, efficiency and scale. More recently, these same core technologies formed the foundation of Docker, the popular, new open source container environment. ",
+      "speakers": ["Brendan Burns", "Craig McLuckie"],
+      "rating":7.5,
+      "duration":52,
+      "comment":"New technology, docker management",
+      "videoSource": {
+        "link":"https://www.youtube.com/embed/tsk0pWf4ipw",
+        "type":"youtube"
+      }
+    },
+    {
+      "title":"Javascript the good parts",
+      "description":"Douglas Crockford is known as The JavaScript Guy. He’s famous not only for his O’Reilly book JavaScript: The Good Parts but even more so as the visionary behind the JSON data format as well as the JSLint tool.",
+      "dateAdded": "2015-02-24T16:33:43.511Z",
+      "speakers": ["Douglas Crockford"],
+      "rating":7.5,
+      "duration":60,
+      "comment":"Good story teller",
+      "videoSource": {
+        "link":"https://www.youtube.com/embed/bo36MrBfTk4",
+        "type":"youtube"
+      }
+    },
+    {
+      "title":"One way hacker",
+      "dateAdded": "2015-02-26T16:33:43.511Z",
+      "description":"One Hacker Way, a Rational Alternative to Agile",
+      "speakers": ["Erik Meijer"],
+      "rating":7.38,
+      "duration":46,
+      "comment":"No consistent story, good message, extreme ideas, good comparison with army organization",
+      "videoSource": {
+        "link":"//player.vimeo.com/video/110554082",
+        "type":"vimeo"
+      }
+    },
+    {
+      "title":"Facebook Release Process",
+      "dateAdded": "2015-02-26T16:33:43.511Z",
+      "description":"Chuck Rossi unveils some of the tools and processes used by Facebook for pushing new updates every day.",
+      "speakers": ["Chuck Rossi"],
+      "rating":7.13,
+      "duration":54,
+      "comment":"Nice tools, good culture for massive changes, advanced gatekeeper, irc bots, boring",
+      "videoSource": {
+        "link":"http://www.infoq.com/presentations/Facebook-Release-Process",
+        "type":"infoq",
+        "preview": "http://www.infoq.com/resource/presentations/Facebook-Release-Process/en/slides/sl1.jpg"
+      }
+    },
+    {
+      "title":"Introduction to Docker",
+      "dateAdded": "2015-02-26T16:33:43.511Z",
+      "description":"dotCloud founder and CTO Solomon Hykes recently stopped by Twitter HQ to show us Docker, an open source project designed to easily create lightweight, portable, self-sufficient containers from any application.",
+      "speakers": ["Solomon Hykes"],
+      "rating":7,
+      "duration":47,
+      "comment":"Good demo, good intro, end was information sparse",
+      "videoSource": {
+        "link":"https://www.youtube.com/embed/Q5POuMHxW-0",
+        "type":"youtube"
+      }
+    },
+    {
+      "title":"Unleash Your Domain",
+      "dateAdded": "2015-03-01T16:33:43.511Z",
+      "description":"Our application runs over 10,000 sustained transactions per second with a rich model. The key? Modeling state transitions explicitly. In today's world many systems have non–functional requirements that prevent them from being single database centric. This presentation looks at how Domain Driven Design can fit into such environments including extremely large scale web sites, batch processing, and even using highly scalable backing stores such as CouchDb or HyperTable.",
+      "speakers": ["Greg Young"],
+      "rating":7.3,
+      "duration":55,
+      "comment":"Good presentor, interesting approach, different from CRUD. Lacking technical details.",
+      "videoSource": {
+        "link":"//player.vimeo.com/video/19428577",
+        "type":"vimeo"
+      }
+    },
+    {
+      "title":"RSA Animate - Drive: The surprising truth about what motivates us",
+      "dateAdded": "2015-03-14T16:50:43.511Z",
+      "description":"This lively RSA Animate, adapted from Dan Pink's talk at the RSA, illustrates the hidden truths behind what really motivates us at home and in the workplace.",
+      "speakers": [""],
+      "rating":8.2,
+      "duration":11,
+      "comment":"Interesting information, great style, short, good graphics, to the point",
+      "videoSource": {
+        "link":"https://www.youtube.com/embed/u6XAPnuFjJc",
+        "type":"youtube"
+      }
+    },
+    {
+      "title":"How to avoid death By PowerPoint: David JP Phillips at TEDxStockholmSalon #2/2014 Think Again",
+      "dateAdded": "2015-03-20T10:03:43.511Z",
+      "description":"With a seldom seen depth of knowledge and passion for his subject, David Phillips has become the leading Swedish figurehead in the art of making presentations. He is the founder and owner of Sweden's largest resource on the subject: Presentationsteknik.com. He is also author of the ground-breaking book \"How To Avoid Death By PowerPoint\" published in more than 30 countries.",
+      "speakers": ["David JP Phillips"],
+      "rating":8.5,
+      "duration":21,
+      "comment":"",
+      "videoSource": {
+        "link":"https://www.youtube.com/embed/Iwpi1Lm6dFo",
+        "type":"youtube"
+      }
+    },
+    {
+      "title":"React 2014 : Erik Meijer - What does it mean to be Reactive?",
+      "dateAdded": "2015-03-23T14:00:00Z",
+      "description":"The inimitable Erik Meijer delivering his opening keynote to React 2014",
+      "speakers": ["Erik Meijer"],
+      "rating":8.1,
+      "duration":46,
+      "comment":"A nice talk to have a good understanding of Reactive Programming without buzzwords.",
+      "videoSource": {
+        "link":"http://www.youtube.com/embed/sTSQlYX5DU0",
+        "type":"youtube"
+      }
+    },
+    {
+      "title":"No estimates: how you can predict the release date of your project without estimating.",
+      "dateAdded": "2015-04-01T16:05:00Z",
+      "description":"Often we hear that estimating a project is a must. \"We can't make decisions without them\" we hear often. In this session I'll present examples of how we can predict a release date of a project without any estimates, only relying on easily available data. I'll show how we can follow progress on a project at all times without having to rely on guesswork, and we will review how large, very large and small projects have already benefited from this in the past. At the end of the session you will be ready to start your own #NoEstimates journey.",
+      "speakers": ["Vasco Duarte"],
+      "rating":7.0,
+      "duration":56,
+      "comment":"We believe! Project != backlog, because backlog is not known at start of project. Want to invite the speaker. Good discussion after the talk. We can apply this to our own projects. Still use SP for focus in projects.",
+      "videoSource": {
+        "link":"http://www.youtube.com/embed/G-zy4i6F0lI",
+        "type":"youtube"
+      }
+    }
+  ]
+}
