@@ -1,7 +1,7 @@
 var fs = require("fs")
 var http = require("http")
 
-fs.readFile('../data/videos.json', function (err, data) {
+fs.readFile('/data/videos.json', function (err, data) {
   if (err) throw err;
   var videos = JSON.parse(data).videos
   videos.map(function(video) {
