@@ -20,14 +20,16 @@
 <div class="well" ng-repeat="video in filteredVideos = (main.videos | orderBy: order:true | filter: video)" ng-cloak class="ng-cloak">
     <div class="row">
         <div class="media">
-            <a class="pull-left" href="#">
+            <div class="pull-left">
                 <div ng-if="video.videoSource.preview">
+                    <a href="{{video.videoSource.link}}">
                     <img src="{{video.videoSource.preview | trustAsResourceUrl}}" width="265" height="200"/>
+                    </a>
                 </div>
                 <div ng-if="!video.videoSource.preview">
                     <iframe width="265" height="200" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
                 </div>
-            </a>
+            </div>
 
             <div class="media-body">
                 <h4 class="media-heading">{{video.title}}</h4>
