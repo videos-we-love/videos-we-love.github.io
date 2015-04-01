@@ -143,6 +143,19 @@
         "link":"http://www.youtube.com/embed/sTSQlYX5DU0",
         "type":"youtube"
       }
+    },
+    {
+      "title":"No estimates: how you can predict the release date of your project without estimating.",
+      "dateAdded": "2015-04-01T16:05:00Z",
+      "description":"Often we hear that estimating a project is a must. \"We can't make decisions without them\" we hear often. In this session I'll present examples of how we can predict a release date of a project without any estimates, only relying on easily available data. I'll show how we can follow progress on a project at all times without having to rely on guesswork, and we will review how large, very large and small projects have already benefited from this in the past. At the end of the session you will be ready to start your own #NoEstimates journey.",
+      "speakers": ["Vasco Duarte"],
+      "rating":7.0,
+      "duration":56,
+      "comment":"We believe! Project != backlog, because backlog is not known at start of project. Want to invite the speaker. Good discussion after the talk. We can apply this to our own projects. Still use SP for focus in projects.",
+      "videoSource": {
+        "link":"http://www.youtube.com/embed/G-zy4i6F0lI",
+        "type":"youtube"
+      }
     }
   ]
 }
