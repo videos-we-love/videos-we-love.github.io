@@ -3,7 +3,7 @@
     <div class="panel-body">
         <div class="row">
             <div class="col-md-6">
-                <select class="form-control pull-left" ng-model="order">
+                <select class="form-control pull-left" ng-model="main.order">
                     <option value="dateAdded">Date</option>
                     <option value="duration">Duration</option>
                     <option value="rating">Rating</option>
@@ -17,7 +17,7 @@
 </div>
 
 <!--</div>-->
-<div class="well" ng-repeat="video in filteredVideos = (main.videos | orderBy: order:true | filter: video)" ng-cloak class="ng-cloak">
+<div class="well" ng-repeat="video in filteredVideos = (main.videos | orderBy: main.order:true | filter: video)" ng-cloak class="ng-cloak">
     <div class="row">
         <div class="media">
             <div class="pull-left">
