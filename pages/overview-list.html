@@ -3,7 +3,7 @@
     <div class="panel-body">
         <div class="row">
             <div class="col-md-6">
-                <select class="form-control pull-left" ng-model="order">
+                <select class="form-control pull-left" ng-model="main.order">
                     <option value="dateAdded">Date</option>
                     <option value="duration">Duration</option>
                     <option value="rating">Rating</option>
@@ -17,17 +17,17 @@
 </div>
 
 <!--</div>-->
-<div class="well" ng-repeat="video in filteredVideos = (main.videos | orderBy: order:true | filter: video)" ng-cloak class="ng-cloak">
+<div class="well" ng-repeat="video in filteredVideos = (main.videos | orderBy: main.order:true | filter: video)" ng-cloak class="ng-cloak">
     <div class="row">
         <div class="media">
             <div class="pull-left">
                 <div ng-if="video.videoSource.preview">
                     <a href="{{video.videoSource.link}}">
-                    <img src="{{video.videoSource.preview | trustAsResourceUrl}}" width="265" height="200"/>
+                    <img src="{{video.videoSource.preview}}" width="265" height="200"/>
                     </a>
                 </div>
                 <div ng-if="!video.videoSource.preview">
-                    <iframe width="265" height="200" src="{{video.videoSource.link | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="265" height="200" src="{{video.videoSource.link}}" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -47,8 +47,8 @@
                     <li>|</li>
 
                     <li>
-                        <div ng-controller="RatingDemoCtrl">
-                            <rating ng-model="video.rating" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+                        <div>
+                            <rating ng-model="video.rating" max="10" readonly="true" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
                             <b>(<i>Rating</i> {{video.rating}})</b>
                         </div>
                     </li>
