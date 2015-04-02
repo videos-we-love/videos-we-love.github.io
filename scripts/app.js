@@ -6,10 +6,11 @@ angular.module('app', [
         vm.videos = [];
         $scope.order = 'dateAdded';
 
-        $http.get('data/videos.json').
+        $http.get('http://192.168.59.103/videoswelove/videos/_search?size=100').
             success(function (data) {
-                console.log(data);
-                vm.videos = data.videos;
+                vm.videos = data.hits.hits.map(function(element) {
+                    return element._source
+                });
             });
 
         //$scope.setOrder = function (order) {
