@@ -156,6 +156,19 @@
         "link":"http://www.youtube.com/embed/G-zy4i6F0lI",
         "type":"youtube"
       }
+    },
+    {
+      "title":"Humans Need Not Apply",
+      "dateAdded": "2015-04-07T00:25:00Z",
+      "description":"Humans Need Not Apply is a 2014 short internet documentary film, directed, produced, written, and edited by C.G.P. Grey. The film focuses on the future of the integration of automation into economics, as well as the worldwide workforce.",
+      "speakers": ["C.G.P. Grey"],
+      "rating":8.9,
+      "duration":15,
+      "comment":"Amazing video about the scary future of the human race",
+      "videoSource": {
+        "link":"http://www.youtube.com/embed/7Pq-S557XQU",
+        "type":"youtube"
+      }
     }
   ]
 }
