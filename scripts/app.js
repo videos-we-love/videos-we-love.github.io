@@ -6,7 +6,7 @@ angular.module('app', [
         vm.videos = [];
         vm.order = 'dateAdded';
 
-        $http.get('http://192.168.59.103/videoswelove/videos/_search?size=100').
+        $http.get('http://manyconf.com:8080/videoswelove/videos/_search?size=100').
             success(function (data) {
                 vm.videos = data.hits.hits.map(function(element) {
                     return element._source
