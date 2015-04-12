@@ -169,6 +169,19 @@
         "link":"http://www.youtube.com/embed/7Pq-S557XQU",
         "type":"youtube"
       }
+    },
+    {
+      "title":"Argument from ignorance - Dr. Neil deGrasse Tyson on UFOs",
+      "dateAdded": "2015-04-07T00:25:00Z",
+      "description":"Dr. Neil deGrasse Tyson gives his remarks on whether we have been visited by extraterrestrials",
+      "speakers": ["Neil deGrasse Tyson"],
+      "rating":8.1,
+      "duration":11,
+      "comment":"Great speaker and clear explanation while argument from ignorance is a great example of a bad argument",
+      "videoSource": {
+        "link":"http://www.youtube.com/embed/NSJElZwEI8o",
+        "type":"youtube"
+      }
     }
   ]
 }
