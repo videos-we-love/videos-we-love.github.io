@@ -43,21 +43,11 @@
                 <ul class="list-inline list-unstyled bottom-align-text">
                     <li><span><i class="glyphicon glyphicon-time"></i> {{video.duration}} min</span></li>
                     <li>|</li>
-                    <span><i class="glyphicon glyphicon-comment"></i> 0 comments</span>
-                    <li>|</li>
-
                     <li>
                         <div>
                             <rating ng-model="video.rating" max="10" readonly="true" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
                             <b>(<i>Rating</i> {{video.rating}})</b>
                         </div>
-                    </li>
-                    <li>|</li>
-                    <li>
-                        <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                        <span><i class="fa fa-facebook-square"></i></span>
-                        <span><i class="fa fa-twitter-square"></i></span>
-                        <span><i class="fa fa-google-plus-square"></i></span>
                     </li>
                 </ul>
             </div>
