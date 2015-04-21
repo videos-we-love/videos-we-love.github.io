@@ -10,7 +10,8 @@
       "comment":"Interesting, much improved agile culture beyond Scrum",
       "videoSource": {
         "link":"https://www.youtube.com/embed/Mpsn3WaI_4k",
-        "type":"youtube"
+        "type":"youtube",
+        "preview:": "http://img.youtube.com/vi/Mpsn3WaI_4k/0.jpg"
       }
     },
     {
