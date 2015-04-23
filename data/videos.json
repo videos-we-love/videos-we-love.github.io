@@ -195,7 +195,7 @@
       "videoSource": {
         "link":"http://www.youtube.com/embed/rffLyHrLqMs",
         "type":"youtube",
-        "preview:": "http://img.youtube.com/vi/rffLyHrLqMs/0.jpg"
+        "preview": "http://img.youtube.com/vi/rffLyHrLqMs/0.jpg"
       }
     },
     {
@@ -209,7 +209,7 @@
       "videoSource": {
         "link":"http://www.youtube.com/embed/x8SV3oAP5wI",
         "type":"youtube",
-        "preview:": "http://img.youtube.com/vi/x8SV3oAP5wI/0.jpg"
+        "preview": "http://img.youtube.com/vi/x8SV3oAP5wI/0.jpg"
       }
     }
   ]
