@@ -183,6 +183,34 @@
         "link":"http://www.youtube.com/embed/NSJElZwEI8o",
         "type":"youtube"
       }
+    },
+    {
+      "title":"2014 World Champlonship of Public Speaking 1st Place Winner",
+      "dateAdded": "2015-04-23T21:25:00Z",
+      "description":"DANANJAYA J HETTIARACHCHI. World Champion of Public Speaking 2014",
+      "speakers": ["Dananjaya J Hettiarachchi"],
+      "rating":7.3,
+      "duration":8,
+      "comment":"",
+      "videoSource": {
+        "link":"http://www.youtube.com/embed/rffLyHrLqMs",
+        "type":"youtube",
+        "preview:": "http://img.youtube.com/vi/rffLyHrLqMs/0.jpg"
+      }
+    },
+    {
+      "title":"Could you imagine a world without bosses?",
+      "dateAdded": "2015-04-23T21:25:00Z",
+      "description":"From crowd-sourcing future strategies to employees who can say no to any request, Gary Hamel, professor at the London Business School, discusses radical managerial practices that can alter the business landscape. View more of the series at http://phoenix.edu/lectures.",
+      "speakers": ["Gary Hamel"],
+      "rating":7.9,
+      "duration":2,
+      "comment":"",
+      "videoSource": {
+        "link":"http://www.youtube.com/embed/x8SV3oAP5wI",
+        "type":"youtube",
+        "preview:": "http://img.youtube.com/vi/x8SV3oAP5wI/0.jpg"
+      }
     }
   ]
 }
