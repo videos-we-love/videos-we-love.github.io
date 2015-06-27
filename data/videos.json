@@ -1,6 +1,32 @@
 {
   "videos": [
     {
+      "title":"Mesos, the operating system for your cloud",
+      "dateAdded": "2015-06-27T16:33:43.511Z",
+      "description":"In this talk, we'll learn all about Mesos — what it is, how you can leverage it to simplify your infrastructure and reduce AWS/cloud computing costs, and why you should develop your next application on top of it. This talk will give you the tools you need to understand whether Mesos is the right fit for your infrastructure, and several starting points for learning more about Mesos.",
+      "speakers": ["David Greenberg"],
+      "rating":7.4,
+      "duration":46,
+      "videoSource": {
+        "link":"https://www.youtube.com/embed/LQxnuPcRl4s",
+        "type":"youtube",
+        "preview:": "http://img.youtube.com/vi/LQxnuPcRl4s/0.jpg"
+      }
+    },
+    {
+      "title":"Docker for Developers",
+      "dateAdded": "2015-06-19T16:33:43.511Z",
+      "description":"Thanks to Docker, almost every developer can now easily use containers to build, ship, and run any application, anywhere. How does Docker help with those challenges? What does a \"Dockerized\" development workflow look like? We will talk about the origins and history of Docker, explain its technical foundations, describe a few use-cases, and spend some time explaining how to use it efficiently to achieve fast, reproducible software deployments. Demos will abound.",
+      "speakers": ["Jérôme Petazzoni"],
+      "rating":7.5,
+      "duration":54,
+      "videoSource": {
+        "link":"https://www.youtube.com/embed/FdkNAjjO5yQ",
+        "type":"youtube",
+        "preview:": "http://img.youtube.com/vi/FdkNAjjO5yQ/0.jpg"
+      }
+    },
+    {
       "title":"Spotify Culture Part 1 + 2",
       "dateAdded": "2015-02-24T16:33:43.511Z",
       "description":"An attempt to describe Spotify engineering culture. This is a journey in progress, not a journey completed.",
@@ -24,7 +50,8 @@
       "comment":"",
       "videoSource": {
         "link":"//player.vimeo.com/video/97541186",
-        "type":"vimeo"
+        "type":"vimeo",
+        "preview:": "http://img.youtube.com/vi/Mpsn3WaI_4k/0.jpg"
       }
     },
     {
