@@ -1,22 +1,21 @@
 angular.module('app', [
-        'ngRoute',
-        'ui.bootstrap'
-    ]).controller("MainController", function ($location, $http) {
-        var vm = this;
-        vm.videos = [];
-        vm.order = 'dateAdded';
+    'ngRoute',
+    'ui.bootstrap'
+]).controller("MainController", function ($location, $http) {
+    var vm = this;
+    vm.videos = [];
+    vm.order = 'dateAdded';
 
-        $http.get('http://manyconf.com:8080/videoswelove/videos/_search?size=100').
-            success(function (data) {
-                vm.videos = data.hits.hits.map(function(element) {
-                    return element._source
-                });
-            });
+    $http.get('data/videos.json').
+        success(function (data) {
+            console.log(data);
+            vm.videos = data.videos;
+        });
 
-        vm.isActive = function(route) {
-            return route === $location.path();
-        }
-    })
+    vm.isActive = function(route) {
+        return route === $location.path();
+    }
+})
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.
             when('/backlog', {
