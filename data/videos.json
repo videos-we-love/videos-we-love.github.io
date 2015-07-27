@@ -1,6 +1,19 @@
 {
   "videos": [
     {
+      "title":"1024+ Seconds of JS Wizardry",
+      "dateAdded": "2015-07-27T22:20:43.511Z",
+      "description":"We spend our days creating large-scale applications byte by byte. But what happens at night when we get rid of bloated libraries and browser dependencies? What will we discover deep under the surface if we dissect the language of the web into its atomic parts? In this talk we will hack tweet-sized games, write code in only six characters and create the self-modifying \"Hello World\" in less than 1024 bytes of JavaScript. All just for fun and without asking \"Why?\". Prepare yourself for 140 slides full of old-school ASCII art and crazy code golfing!",
+      "speakers": ["Martin Kleppe"],
+      "rating":9.23,
+      "duration":31,
+      "videoSource": {
+        "link":"https://www.youtube.com/embed/RTxtiLp1C8Y",
+        "type":"youtube",
+        "preview": "http://img.youtube.com/vi/RTxtiLp1C8Y/0.jpg"
+      }
+    },
+    {
       "title":"Mesos, the operating system for your cloud",
       "dateAdded": "2015-06-27T16:33:43.511Z",
       "description":"In this talk, we'll learn all about Mesos — what it is, how you can leverage it to simplify your infrastructure and reduce AWS/cloud computing costs, and why you should develop your next application on top of it. This talk will give you the tools you need to understand whether Mesos is the right fit for your infrastructure, and several starting points for learning more about Mesos.",
