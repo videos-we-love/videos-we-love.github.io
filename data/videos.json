@@ -1,6 +1,18 @@
 {
   "videos": [
     {
+      "title":"The Bad Idea Terminator",
+      "dateAdded": "2015-10-16T21:20:43.511Z",
+      "description":"Melissa Perri presents how to destroy bad product ideas before they go to market while achieving the business goals and determining product strategy. She brings practical techniques on defining success and creating effective product experiments to kill bad ideas and give energy to the good ones.",
+      "speakers": ["Melissa Perri"],
+      "rating":7.46,
+      "duration":41,
+      "videoSource": {
+        "link":"http://www.infoq.com/presentations/product-management-bad-ideas",
+        "type":"infoq",
+        "preview": "http://cdn.infoq.com/statics_s2_20151015-0307/resource/presentations/product-management-bad-ideas/en/slides/sl1.jpg"
+      }
+    },    {
       "title":"1024+ Seconds of JS Wizardry",
       "dateAdded": "2015-07-27T22:20:43.511Z",
       "description":"We spend our days creating large-scale applications byte by byte. But what happens at night when we get rid of bloated libraries and browser dependencies? What will we discover deep under the surface if we dissect the language of the web into its atomic parts? In this talk we will hack tweet-sized games, write code in only six characters and create the self-modifying \"Hello World\" in less than 1024 bytes of JavaScript. All just for fun and without asking \"Why?\". Prepare yourself for 140 slides full of old-school ASCII art and crazy code golfing!",
