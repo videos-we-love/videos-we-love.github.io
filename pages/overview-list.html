@@ -22,8 +22,8 @@
         <div class="media">
             <div class="pull-left">
                 <div ng-if="video.videoSource.preview">
-                    <a href="{{video.videoSource.link}}">
-                    <img src="{{video.videoSource.preview}}" width="265" height="200"/>
+                    <a href="{{video.videoSource.link}}" ng-click="pageTracker._trackEvent('Videos', 'Play', 'Random video');">
+                        <img src="{{video.videoSource.preview}}" width="265" height="200"/>
                     </a>
                 </div>
                 <div ng-if="!video.videoSource.preview">
@@ -47,7 +47,7 @@
                     <li>|</li>
                     <li>
                         <div>
-                            <rating ng-model="video.rating" max="10" readonly="true" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+                            <uib-rating ng-model="video.rating" max="10" readonly="true" on-hover="hoveringOver(value)" on-leave="overStar = null"></uib-rating>
                             <b>(<i>Rating</i> {{video.rating}})</b>
                         </div>
                     </li>

@@ -8,7 +8,6 @@ angular.module('app', [
 
     $http.get('data/videos.json').
         success(function (data) {
-            console.log(data);
             vm.videos = data.videos;
         });
 
