@@ -1,6 +1,19 @@
 {
   "videos": [
     {
+      "title":"Jepsen II: Linearizable Boogaloo",
+      "dateAdded": "2015-10-23T21:20:43.511Z",
+      "description":"What is ACID anyway, and why is everyone so uptight about it? When can't we have eventual consistency, and what do we sacrifice in exchange for stronger models? I've spent the last year trying to wrap my head around consistency in distributed systems, and testing databases to see how those consistency models play out in practice. In this talk we'll explore linearizability--one of the strongest consistency models for a concurrent system--move from an academic definition to an intuitive understanding, and see the ways in which databases succeed--and fail--to live up to their consistency claims",
+      "speakers": ["Kyle Kingsbury"],
+      "rating":8,
+      "duration":45,
+      "videoSource": {
+        "link":"https://www.youtube.com/embed/QdkS6ZjeR7Q",
+        "type":"youtube",
+        "preview": "http://img.youtube.com/vi/QdkS6ZjeR7Q/0.jpg"
+      }
+    },
+    {
       "title":"Keynote: One Hacker Way - Erik Meijer",
       "dateAdded": "2015-10-22T21:20:43.511Z",
       "description":"This video was recorded at GOTO Copenhagen 2015.http://gotocon.com/cph-2015/presentat... Join us at a GOTO Conference - www.gotocon.com",
