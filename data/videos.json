@@ -1,6 +1,19 @@
 {
   "videos": [
     {
+      "title":"Turning the database inside out with Apache Samza",
+      "dateAdded": "2015-11-13T14:11:43.511Z",
+      "description":"",
+      "speakers": ["Martin Kleppmann"],
+      "rating":7.5,
+      "duration":40,
+      "videoSource": {
+        "link":"https://www.youtube.com/embed/fU9hR3kiOK0",
+        "type":"youtube",
+        "preview": "http://img.youtube.com/vi/fU9hR3kiOK0/0.jpg"
+      }
+    },
+    {
       "title":"Jepsen II: Linearizable Boogaloo",
       "dateAdded": "2015-10-23T21:20:43.511Z",
       "description":"What is ACID anyway, and why is everyone so uptight about it? When can't we have eventual consistency, and what do we sacrifice in exchange for stronger models? I've spent the last year trying to wrap my head around consistency in distributed systems, and testing databases to see how those consistency models play out in practice. In this talk we'll explore linearizability--one of the strongest consistency models for a concurrent system--move from an academic definition to an intuitive understanding, and see the ways in which databases succeed--and fail--to live up to their consistency claims",
